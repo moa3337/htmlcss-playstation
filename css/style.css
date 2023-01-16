@@ -1,0 +1,7 @@
+.sony{
+    min-height: 50px;
+}
+.jumbo{
+    background-image: url(../pictures/img/jumbo-bg.png);
+    object-fit: cover;
+}
