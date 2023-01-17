@@ -3,5 +3,28 @@
 }
 .jumbo{
     background-image: url(../pictures/img/jumbo-bg.png);
-    object-fit: cover;
+    background-size: cover;
+}
+.jumbo-2{
+    background-image: url(../pictures/img/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
+}
+.jumbo-mini{
+    background-color: #BEBCBB;
+}
+.jumbo-mini2{
+    background-color: #161C3B;
+}
+a{
+    text-decoration: none;
+}
+button{
+    font-size: 14px;
+}
+.opacity-75>img{
+    width: 30%;
+
+}
+.opacity-75:hover img{
+    opacity: 1;
 }
