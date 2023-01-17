@@ -1,6 +1,15 @@
 .sony{
     min-height: 50px;
 }
+.logo{
+    width: 10%;
+}
+.logo-2{
+    width: 2%;
+}
+li{
+    list-style: none;
+}
 .jumbo{
     background-image: url(../pictures/img/jumbo-bg.png);
     background-size: cover;
