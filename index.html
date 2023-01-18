@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="eit">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    
-    <link rel="stylesheet" href="./css/style.css">
-    
+    <link rel="stylesheet" href="./css/style.css">   
     <title>PlayStation</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <header>
-        <div class="bg-dark sony">
-            <img src="" class="img-fluid" alt="">
+        <div class="container-fluid">
+            <div class="row bg-dark">
+                <div class="col align-self-end p-2">
+                    <img class="img-fluid logo" src="./pictures/img/sony_logo.svg" alt="">
+                </div>
+            </div>
         </div>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="./pictures/img/play_logo.svg" alt="">
@@ -28,7 +30,7 @@
                 <!-- NAV-BAR PRINCIPALE-->
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <!-- parte sinistra -->
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll nav-sx" style="--bs-scroll-height: 100px;">
                         <li class="nav-item dropdown d-flex">
                             <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Giochi
@@ -48,20 +50,62 @@
                             <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Supporto
                             </a>
+                            <!-- PARTE DROPDOWN-->
+                            <ul class="dropdown-menu inline">
+                                <li class="d-flex">
+                                    <a class="dropdown-item text-center" href="#">
+                                        <img class="logo" src="./pictures/img/play-menu-ico.png" alt="">
+                                        <p>PlayStation 5</p>
+                                    </a>
+                                    <a class="dropdown-item text-center" href="#">
+                                        <img class="logo" src="./pictures/img/play-menu-ico.png" alt="">
+                                        <p>PlayStation 4</p>
+                                    </a>
+                                    <a class="dropdown-item text-center" href="#">
+                                        <img class="logo" src="./pictures/img/play-menu-ico.png" alt="">
+                                        <p>PlayStation 3</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="d-flex">
+                                    <a class="dropdown-item text-center" href="#">link supporto</a>
+                                    <a class="dropdown-item text-center" href="#">link supporto</a>
+                                    <a class="dropdown-item text-center" href="#">link supporto</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                     <!-- parte destra -->
-                    <form class="d-flex" role="search">
-                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                    <form class="d-flex nav-dx" role="search">
+                        <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     My PlayStation
                                 </a>
+                                <ul class="dropdown-menu inline drop-dx">
+                                    <li class="d-flex">
+                                        <a class="dropdown-item text-center" href="#">
+                                            <img class="logo" src="./pictures/img/play-menu-ico.png" alt="">
+                                            <p>PlayStation 5</p>
+                                        </a>
+                                        <a class="dropdown-item text-center" href="#">
+                                            <img class="logo" src="./pictures/img/play-menu-ico.png" alt="">
+                                            <p>PlayStation 4</p>
+                                        </a>
+                                        <a class="dropdown-item text-center" href="#">
+                                            <img class="logo" src="./pictures/img/play-menu-ico.png" alt="">
+                                            <p>PlayStation 3</p>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                         <button class="bg-dark text-white rounded-pill" type="submit">
                             Accedi
                         </button>
+                        <img class="logo ms-2" src="./pictures/img/lens.svg" alt="">
                     </form>
                 </div>
             </div>
@@ -92,36 +136,37 @@
             </div>
             <div class="row align-items-end ms-1">
                 <div class="col">
-                    <button class="bg-danger text-light rounded-pill mb-5 p-2 fw-bolder" type="submit">
+                    <button class="btn btn-danger text-light rounded-pill mb-5 p-2 fw-bolder" type="submit">
                         Acquista ora
                     </button>
                 </div>
             </div>
         </div>
-        <!-- ECCO LA PLAYSTATION 5 -->
+        <!-- GIOCHI PLAYSTATION 5-->
         <div class="container">
             <div class="row g-4 mt-1 mb-4">
                 <div class="col-6 col-md-4 col-lg-2">
-                    <img src="./pictures/img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid rounded-4 border border-3 border-primary" alt="">
+                    <img class="img-fluid rounded-4 scale" src="./pictures/img/returnal-listing-thumb-01-ps5.jpg" alt="">
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                    <img src="./pictures/img/ratchet-and-clank-rift-apart-keyart.jpg" class="img-fluid rounded-4 border border-3 border-primary" alt="">
+                    <img class="img-fluid rounded-4 scale" src="./pictures/img/ratchet-and-clank-rift-apart-keyart.jpg" alt="">
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                    <img src="./pictures/img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid rounded-4 border border-3 border-primary" alt="">
+                    <img class="img-fluid rounded-4 scale" src="./pictures/img/returnal-listing-thumb-01-ps5.jpg" alt="">
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                    <img src="./pictures/img/ratchet-and-clank-rift-apart-keyart.jpg" class="img-fluid rounded-4 border border-3 border-primary" alt="">
+                    <img class="img-fluid rounded-4 scale" src="./pictures/img/ratchet-and-clank-rift-apart-keyart.jpg" alt="">
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                    <img src="./pictures/img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid rounded-4 border border-3 border-primary" alt="">
+                    <img class="img-fluid rounded-4 scale" src="./pictures/img/returnal-listing-thumb-01-ps5.jpg" alt="">
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                    <img src="./pictures/img/ratchet-and-clank-rift-apart-keyart.jpg" class="img-fluid rounded-4 border border-3 border-primary" alt="">
+                    <img class="img-fluid rounded-4 scale" src="./pictures/img/ratchet-and-clank-rift-apart-keyart.jpg" alt="">
                 </div>
             </div>
         </div>
-        <div class="container">
+        <!-- ECCO LA PLAYSTATION 5 -->
+        <div class="container mt-2">
             <div class="row">
                 <div class="col-12 d-flex flex-column align-items-center text-center">
                     <p class="text-primary fw-bolder mt-5 mb-0">PLAY HAS NO LIMITS</p>
@@ -136,7 +181,7 @@
                         <p class="fs-5 text-secondary">
                             Sperimenta la nuova generazione di incredibili giochi PlayStation
                         </p>
-                        <button class="text-white bg-primary border-0 rounded-pill p-2" type="button">
+                        <button class="text-white btn btn-primary rounded-pill p-2" type="button">
                             Maggiori informazzioni
                         </button>
                     </div>
@@ -148,24 +193,24 @@
         </div>
         <div class="container">
             <div class="row row-cols-3 row-cols-md-5 g-5 mt-1 mb-4 text-center">
-                <div class="col opacity-75 border-primary border-bottom">
-                    <img src="./pictures/img/playstation-5-thumb.png" class="img-fluid" alt="">
+                <div class="col scale">
+                    <img class="w-25" src="./pictures/img/playstation-5-thumb.png" alt="">
                     <p>Console PS5</p>
                 </div>
-                <div class="col opacity-75">
-                    <img src="./pictures/img/joypad-thumb.png" class="img-fluid" alt="">
+                <div class="col scale">
+                    <img class="w-25" src="./pictures/img/joypad-thumb.png" alt="">
                     <p>Controller wireless DualSense</p>
                 </div>
-                <div class="col opacity-75">
-                    <img src="./pictures/img/headset-thumb.png" class="img-fluid" alt="">
+                <div class="col scale">
+                    <img class="w-25" src="./pictures/img/headset-thumb.png" alt="">
                     <p>Cuffie wireless con microfono PULSE 3</p>
                 </div>
-                <div class="col opacity-75">
-                    <img src="./pictures/img/remote-thumb.png" class="img-fluid" alt="">
+                <div class="col scale">
+                    <img class="w-25" src="./pictures/img/remote-thumb.png" alt="">
                     <p>Telecomando Media</p>
                 </div>
-                <div class="col opacity-75">
-                    <img src="./pictures/img/camera-thumb.jpg" class="img-fluid" alt="">
+                <div class="col scale">
+                    <img class="w-25" src="./pictures/img/camera-thumb.jpg" alt="">
                     <p>Telecamera HD</p>
                 </div>
             </div>
@@ -194,7 +239,7 @@
             </div>
             <div class="row align-items-end ms-1">
                 <div class="col">
-                    <button class="bg-danger text-light rounded-pill mb-5 p-2 fw-bolder" type="submit">
+                    <button class="btn btn-danger text-light rounded-pill mb-5 p-2 fw-bolder" type="submit">
                         Acquista ora
                     </button>
                 </div>
@@ -271,7 +316,7 @@
                     <p class="text-secondary">
                         Giochi incredibili live su con PS4, con 1 TB di spazio di archiviazione.
                     </p>
-                    <button class="text-white bg-primary border-0 rounded-pill p-2" type="button">
+                    <button class="text-white btn btn-primary rounded-pill p-2" type="button">
                         Scopri di più
                     </button>
                 </div>
@@ -282,7 +327,7 @@
                         Oltre 500 titoli ed esperienze di gioco. <br>
                         Scoprili tutti.
                     </p>
-                    <button class="text-white bg-primary border-0 rounded-pill p-2" type="button">
+                    <button class="text-white btn btn-primary rounded-pill p-2" type="button">
                         Scopri di più
                     </button>
                 </div>
@@ -293,7 +338,7 @@
                         Migliora la tua esperienza PS4 con una gamma con una 
                         gamma di accessori ufficiali.
                     </p>
-                    <button class="text-white bg-primary border-0 rounded-pill p-2" type="button">
+                    <button class="text-white btn btn-primary rounded-pill p-2" type="button">
                         Scopri di più
                     </button>
                 </div>
@@ -301,6 +346,7 @@
         </div>
         <!-- BLOCCO MINI-JUMBOTRON 1° -->
         <div class="container-fluid jumbo-mini">
+            
             <div class="row align-items-end ms-1 mt-5 mb-5">
                 <div class="col-8 col-md-3 mt-5">
                     <img src="./pictures/img/ps-plus-logo.png" class="img-fluid" alt="">
@@ -346,7 +392,10 @@
             </div>
         </div>
         <!-- BLOCCO MINI-JUMBOTRON 2° -->
-        <div class="container-fluid jumbo-mini2">
+        <div class="container-fluid jumbo-mini2 position-relative">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <img class="w-50" src="./pictures/img/ps-now-april-featured-image-block.png" alt="">
+            </div>
             <div class="row align-items-end ms-1 mt-5 mb-5">
                 <div class="col-7 col-md-4 mt-5">
                     <img src="./pictures/img/ps-now-logo-two-column.png" class="img-fluid" alt="">
@@ -363,7 +412,7 @@
             </div>
             <div class="row align-items-end ms-1">
                 <div class="col">
-                    <button class="text-dark bg-white rounded-pill border-0 mb-5 p-2 fw-bolder" type="submit">
+                    <button class="text-dark btn btn-light rounded-pill mb-5 p-2 fw-bolder" type="submit">
                         Esplora PlayStation Now
                     </button>
                 </div>
