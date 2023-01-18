@@ -1,4 +1,4 @@
-
+/* - FONT-SIZE - */
 #navbarScroll{
     font-size: 14px;
 }
@@ -8,16 +8,17 @@
 .dropdown-item>p{
     font-size: 12px;
 }
+button{
+    font-size: 14px;
+}
 .logo{
     width: 10%;
 }
 .logo-2{
     width: 2%;
 }
-li{
-    list-style: none;
-}
 
+/* -IMMAGINE IN BACKGROUND- */
 .jumbo{
     background-image: url(../pictures/img/jumbo-bg.png);
     background-size: cover;
@@ -33,11 +34,9 @@ li{
 .jumbo-mini2{
     background-color: #161C3B;
 }
+/* - CUSTOM STYLE - */
 a{
     text-decoration: none;
-}
-button{
-    font-size: 14px;
 }
 .scale{
     cursor: pointer;
@@ -46,9 +45,10 @@ button{
 .scale:hover{
     transform: scale(1.2);
 }
-.scale:active{
-    
-}
+
+/*******************
+       MEDIA
+*******************/
 @media screen and (max-width: 991px){
     .nav-sx{
         display: flex;
